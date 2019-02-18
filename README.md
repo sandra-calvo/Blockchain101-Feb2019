@@ -1,6 +1,6 @@
 # Build and deploy your Blockchain network
 
->Hyperledger Fabric sample Fabcar on IBM Blockchain Platform 2.0
+>Using Hyperledger Fabric on IBM Blockchain Platform 2.0
 
 This code pattern demonstrates setting up a network on the IBM Blockchain Platform 2.0 and deploying the Fabcar smart contract on the network.  Next, we setup our application to interact with the network including identities to submit transactions on the smart contract.  The application is setup with a Node.js server using the Fabric Node SDK to process requests to the network, and a Vue.js client to bring up a web interface.
 
