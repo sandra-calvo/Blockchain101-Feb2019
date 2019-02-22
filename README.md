@@ -73,11 +73,7 @@ First we need to install the Blockchain plugin in VS Code.
 Open Visual Studio Code and go to the extensions tab on the left side. Search for Blockchain, select IBM Blockchain Platform and click on install. 
 
 <p align="center">
-  <img src="https://thumbs.gfycat.com/MessyFortunateCalf-size_restricted.gif">
-</p>
-
-<p align="center">
-  <img src="Downloads/bc-plugin.gif">
+  <img src="docs/doc-gifs/bc-plugin.gif">
 </p>
 
 
