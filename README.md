@@ -1,10 +1,9 @@
-# Build and deploy your Blockchain network
+# Build and deploy your first Blockchain network 
+### Using Hyperledger Fabric on IBM Blockchain Platform 2.0
 
->Using Hyperledger Fabric on IBM Blockchain Platform 2.0
+This lab demonstrates setting up a network on the IBM Blockchain Platform 2.0 and deploying the Fabcar smart contract on the network.  We will setup our application to interact with the network including identities to submit transactions on the smart contract.  The application is setup with a Node.js server using the Fabric Node SDK to process requests to the network, and a Vue.js client to bring up a web interface.
 
-This code pattern demonstrates setting up a network on the IBM Blockchain Platform 2.0 and deploying the Fabcar smart contract on the network.  Next, we setup our application to interact with the network including identities to submit transactions on the smart contract.  The application is setup with a Node.js server using the Fabric Node SDK to process requests to the network, and a Vue.js client to bring up a web interface.
-
- When the reader has completed this code pattern, they will understand how to:
+After you complete this lab, you will understand how to:
 
 * Setup a Hyperledger Fabric network on IBM Blockchain Platform 2.0
 * Install and instantiate smart contract through the IBM Blockchain Platform 2.0
@@ -18,8 +17,6 @@ This code pattern demonstrates setting up a network on the IBM Blockchain Platfo
   <img src="docs/doc-images/arch-flow.png">
 </p>
 
-The developer uses the IBM Blockchain Platform Extension for VS Code to:
-
 1. The Blockchain Operator sets up the IBM Blockchain Platform 2.0 service
 2. The IBM Blockchain Platform 2.0 enables to create a Hyperledger Fabric network onto a IBM Kubernetes Service, allowing to install and instantiate the Fabcar smart contract on the network
 3. The Node.js application server uses the Fabic sdk to interact with the deployed network on IBM Blockchain Platform 2.0 and creates APIs for a web client
@@ -27,7 +24,7 @@ The developer uses the IBM Blockchain Platform Extension for VS Code to:
 5. The User interacts with the Fabcar Vue.js web interface to update and query the blockchain ledger and state
 
 
-# Included components
+# Components
 *	[IBM Blockchain Platform 2.0](https://console.bluemix.net/docs/services/blockchain/howto/ibp-v2-deploy-iks.html#ibp-v2-deploy-iks) gives you total control of your blockchain network with a user interface that can simplify and accelerate your journey to deploy and manage blockchain components on the IBM Cloud Kubernetes Service.
 *	[IBM Cloud Kubernetes Service](https://www.ibm.com/cloud/container-service) gcreates a cluster of compute hosts and deploys highly available containers. A Kubernetes cluster lets you securely manage the resources that you need to quickly deploy, update, and scale applications.
 * [IBM Blockchain Platform Extension for VS Code](https://marketplace.visualstudio.com/items?itemName=IBMBlockchain.ibm-blockchain-platform) is designed to assist users in developing, testing, and deploying smart contracts -- including connecting to Hyperledger Fabric environments.
@@ -37,10 +34,6 @@ The developer uses the IBM Blockchain Platform Extension for VS Code to:
 + [Node.js](https://nodejs.org) is an open source, cross-platform JavaScript run-time environment that executes server-side JavaScript code.
 + [Express.js](https://expressjs.com/) is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications
 + [Vue.js](https://getbootstrap.com/) is an open source toolkit for developing with HTML, CSS, and JavaScript.
-
-## Running the application
-
-Follow these steps to set up and run this code pattern. The steps are described in detail below.
 
 ### Prerequisites
 
@@ -67,13 +60,19 @@ Follow these steps to set up and run this code pattern. The steps are described 
 Clone this repository in a folder your choice:
 
 ```bash
-git clone https://github.com/IBM/fabcar-blockchain-sample.git
-cd fabcar-blockchain-sample
+git clone https://github.com/sandra-calvo/first-blockchain-app.git
+cd first-blockchain-app
 ```
 
 ## 2. Package the smart contract
 
 We will use the IBM Blockchain Platform extension to package the Fabcar smart contract.
+
+- Sandra - 
+
+First we need to install the Blockchain plugin in VS Code. 
+
+
 * Open Visual Studio code and open the `contract` folder from this repository that was cloned earlier.
 
 * Press the `F1` key to see the different VS code options. Choose `IBM Blockchain Platform: Package a Smart Contract Project`.
