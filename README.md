@@ -67,13 +67,15 @@ cd first-blockchain-app
 ## 2. Package the smart contract
 
 We will use the IBM Blockchain Platform extension to package the Fabcar smart contract.
-
 - Sandra - 
 
 First we need to install the Blockchain plugin in VS Code. 
+Open Visual Studio Code and go to the extensions tab on the left side. Search for Blockchain, select IBM Blockchain Platform and click on install. 
+
+https://gfycat.com/MessyFortunateCalf
 
 
-* Open Visual Studio code and open the `contract` folder from this repository that was cloned earlier.
+* In Visual Studio, open the `contract` folder from this repository that was cloned earlier.
 
 * Press the `F1` key to see the different VS code options. Choose `IBM Blockchain Platform: Package a Smart Contract Project`.
 
