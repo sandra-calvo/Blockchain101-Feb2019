@@ -76,6 +76,10 @@ Open Visual Studio Code and go to the extensions tab on the left side. Search fo
   <img src="https://thumbs.gfycat.com/MessyFortunateCalf-size_restricted.gif">
 </p>
 
+<p align="center">
+  <img src="Downloads/bc-plugin.gif">
+</p>
+
 
 * In Visual Studio, open the `contract` folder from this repository that was cloned earlier.
 
