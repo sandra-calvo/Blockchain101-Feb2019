@@ -60,8 +60,8 @@ After you complete this lab, you will understand how to:
 Clone this repository in a folder your choice:
 
 ```bash
-git clone https://github.com/sandra-calvo/first-blockchain-app.git
-cd first-blockchain-app
+git clone https://github.com/sandra-calvo/myfirst-blockchain-app.git
+cd myfirst-blockchain-app
 ```
 
 ## 2. Package the smart contract
