@@ -442,5 +442,5 @@ You can go to the IBM Blockchain Platform v2 console to monitor your users and g
 
 **FANTASTIC!** You finished the lab! 👍
 
-If you want you can go to another lab and create a global finance application on blockchain developed using the IBM Blockchain Platform Extension for VS Code. 
+If you want you can go to another lab and develop a Node.js smart contract and web app for a Global Finance with blockchain use case. 
 https://github.com/IBM/global-financing-blockchain
