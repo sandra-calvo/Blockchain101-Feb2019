@@ -440,31 +440,7 @@ You can go to the IBM Blockchain Platform v2 console to monitor your users and g
 <br>
 
 
-## Troubleshooting
+**FANTASTIC!** You finished the lab! 👍
 
-* If you receive the following error on submitting transaction:
-`error: [Client.js]: Channel not found for name mychannel`
-
-  Make sure your connection json file has channels defined like this, or you can manually add the following json and updated the IP address and ports manually:
-  ```
-  "channels": {
-          "mychannel": {
-              "orderers": [
-                  "169.46.208.151:32078"
-              ],
-              "peers": {
-                  "169.46.208.151:31017": {}
-              }
-          }
-      },
-  ```
-
-
-## Links
-* [Hyperledger Fabric Docs](http://hyperledger-fabric.readthedocs.io/en/latest/)
-* [IBM Code Patterns for Blockchain](https://developer.ibm.com/patterns/category/blockchain/)
-
-## License
-This code pattern is licensed under the Apache Software License, Version 2. Separate third-party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
-
-[Apache Software License (ASL) FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
+If you want you can go to another lab and create a global finance application on blockchain developed using the IBM Blockchain Platform Extension for VS Code. 
+https://github.com/IBM/global-financing-blockchain
