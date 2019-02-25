@@ -444,3 +444,5 @@ You can go to the IBM Blockchain Platform v2 console to monitor your users and g
 
 If you want you can go to another lab and develop a Node.js smart contract and web app for a Global Finance with blockchain use case. 
 https://github.com/IBM/global-financing-blockchain
+
+If you have access to the paid Blockchain service on IBM Cloud you could try this lab: https://github.com/IBM/car-auction-network-fabric-node-sdk
