@@ -88,7 +88,7 @@ The smart contract in this application is similar to the one in Lab 1. The code 
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab2-1.png">
+  <img src="docs/doc-images/Lab 2-1.png">
 </p>
 <br>
 
@@ -142,7 +142,7 @@ The following illustration shows the components of your blockchain network and h
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab2-2.png">
+  <img src="docs/doc-images/Lab 2-2.png">
 </p>
 <br>
 
@@ -154,7 +154,7 @@ Here you can see a sample basic network structure.
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab2-3.png">
+  <img src="docs/doc-images/Lab 2-3.png">
 </p>
 <br>
 
