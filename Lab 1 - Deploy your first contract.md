@@ -3,6 +3,7 @@
  - [STEP 1](#step-1): Create a Smart Contract
  - [STEP 2](#step-2): Set up the IBM Blockchain Platform environment
  - [STEP 3](#step-3):  Test the smart contract
+ - [NEXT STEPS](#next-steps)
 
 This lab is a technical introduction to blockchain, specifically smart contract development using the latest developer enhancements in the Linux Foundation’s Hyperledger Fabric v1.4 and shows you how IBM’s Blockchain Platform’s developer experience can accelerate your pace of development.
 
