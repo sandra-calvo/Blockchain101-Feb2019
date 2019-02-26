@@ -23,9 +23,10 @@ Have fun! 😊
 - [IBM Blockchain Platform Extension for VSCode](https://marketplace.visualstudio.com/items?itemName=IBMBlockchain.ibm-blockchain-platform)
 - [Docker](https://www.docker.com/get-started)
 
-<sup>*IBM Cloud PAY-AS-YOU-GO account needed to deploy the IBM Blockchain Platform in a Kubernetes cluster.
-</sup>
-
 
 For more information on Hyperledger Fabric check:
 * [Hyperledger Fabric Docs](https://github.com/sandra-calvo/Blockchain101-Feb2019/blob/master/Lab%200%20-%20Basic%20concepts.md) 
+
+
+<sup>*IBM Cloud paid account needed to deploy the IBM Blockchain Platform in a Kubernetes cluster.
+</sup>
