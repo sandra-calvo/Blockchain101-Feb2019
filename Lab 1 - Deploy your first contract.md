@@ -42,7 +42,7 @@ After a little delay, at the top of the screen, you will be presented with a cho
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-4.png">
+  <img src="docs/doc-images/Lab1-4.png" width="70%" height="70%">
 </p>
 <br>
 
