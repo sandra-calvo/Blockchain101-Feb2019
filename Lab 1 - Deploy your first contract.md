@@ -58,7 +58,7 @@ Next, select the “Add to workspace” option that appears at the top of the VS
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-6.png">
+  <img src="docs/doc-images/Lab1-6.png" width="70%" height="70%">
 </p>
 <br>
 
@@ -78,7 +78,7 @@ Click to expand the lib folder and open the my-contract.js file by double clicki
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-9.png">
+  <img src="docs/doc-images/Lab1-9.png" width="70%" height="70%">>
 </p>
 <br>
 
@@ -111,7 +111,7 @@ From the Smart Contract Packages view click the “+” icon to package the smar
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-11.png">
+  <img src="docs/doc-images/Lab1-11.png" width="70%" height="70%">
 </p>
 <br>
 
@@ -119,7 +119,7 @@ You will first see an informational message about packaging the contract, then y
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-12.png">
+  <img src="docs/doc-images/Lab1-12.png" width="70%" height="70%">
 </p>
 <br>
 
@@ -131,7 +131,7 @@ Next we will create the IBM Blockchcain Platform local development environment i
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-13.png">
+  <img src="docs/doc-images/Lab1-13.png" width="70%" height="70%">
 </p>
 <br>
 
@@ -165,7 +165,7 @@ From the “Choose which package to install on the peer” pop up at the top of 
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-16.png">
+  <img src="docs/doc-images/Lab1-16.png" width="70%" height="70%">
 </p>
 <br>
 
@@ -184,7 +184,7 @@ From the “Choose a smart contract and version to instantiate” pop up at the 
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-18.png">
+  <img src="docs/doc-images/Lab1-18.png" width="70%" height="70%">
 </p>
 <br>
 
@@ -192,7 +192,7 @@ In the pop up dialogue box at the top of the screen asking **“optional: What f
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-19.png">
+  <img src="docs/doc-images/Lab1-19.png" width="70%" height="70%">
 </p>
 <br>
 
