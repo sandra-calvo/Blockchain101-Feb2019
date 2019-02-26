@@ -1,8 +1,8 @@
 # Lab 1 - Deploy your first contract using VSCode 👩🏻‍💻 👨🏻‍💻
 
- - Step 1: Create a Smart Contract
- - Step 2: Set up the IBM Blockchain Platform environment
- - Step 3: Test the smart contract
+ - [STEP 1](#step-1): Create a Smart Contract
+ - [STEP 2](#step-2): Set up the IBM Blockchain Platform environment
+ - [STEP 3](#step-3):  Test the smart contract
 
 This lab is a technical introduction to blockchain, specifically smart contract development using the latest developer enhancements in the Linux Foundation’s Hyperledger Fabric v1.4 and shows you how IBM’s Blockchain Platform’s developer experience can accelerate your pace of development.
 
