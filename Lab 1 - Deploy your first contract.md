@@ -1,10 +1,9 @@
 # Lab 1 - Deploy your first contract using VSCode 👩🏻‍💻 👨🏻‍💻
 
- - [STEP 1](#step-1): Create a Smart Contract
  - [Create a Smart Contract](#create-a-smart-contract)
- - [STEP 2](#step-2): Set up the IBM Blockchain Platform environment
- - [STEP 3](#step-3): Test the smart contract
- - [NEXT STEPS](#next-steps)
+ - [Set up the IBM Blockchain Platform Environment](#set-up-the-ibm-platform-environment)
+ - [Test the smart contract](#test-the-smart-contract)
+ - [Next Steps](#next-steps)
 
 This lab is a technical introduction to blockchain, specifically smart contract development using the latest developer enhancements in the Linux Foundation’s Hyperledger Fabric v1.4 and shows you how IBM’s Blockchain Platform’s developer experience can accelerate your pace of development.
 
@@ -15,8 +14,8 @@ This lab will take you through using the smart contract development environment 
  - [VSCode](https://code.visualstudio.com/)
  - [IBM Blockchain Platform Extension for VSCode](https://marketplace.visualstudio.com/items?itemName=IBMBlockchain.ibm-blockchain-platform)
 
-## Step 1 
-### Create a Smart Contract
+
+## Create a Smart Contract
 
 Launch VSCode on your computer.
 When VSCode opens, click on the IBM Blockchain Platform (IBP) icon in the Activity Bar in VSCode as shown below.
@@ -137,8 +136,7 @@ You will first see an informational message about packaging the contract, then y
 
 This package is now ready to be installed onto a blockchain peer. 
 
-## Step 2
-### Set up the IBM Blockchain Platform environment
+## Set up the IBM Blockchain Platform environment
 
 Next we will create the IBM Blockchcain Platform local development environment in VSCode. In the Blockchain Connections view click on LOCAL FABRIC OPS.
 
@@ -216,8 +214,7 @@ In the next dialogue that asks for parameters to the function, just press “Ent
 Instantiating a contract can take several minutes as a new docker container is built to contain the contract. 
 When it is complete you will see an information message.
 
-## Step 3
-### Test the smart contract
+## Test the smart contract
 
 At this point the contract is now ready to be called. The instantiate transaction has already been run when the contract was instantiated by the framework. This transaction simply prints out the word “instantiate” to the console. 
 
