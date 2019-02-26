@@ -32,7 +32,7 @@ Once you have had a look at the Homepage, click on the “Create a new smart con
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-3.png" width="70%" height="70%">
+  <img src="docs/doc-images/Lab1-3.png" width="60%" height="60%">
 </p>
 <br>
 
@@ -145,7 +145,7 @@ When the connection is made, you should see a channel called mychannel appear, w
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-14.png" width="70%" height="70%">
+  <img src="docs/doc-images/Lab1-14.png" width="60%" height="60%">
 </p>
 <br>
 
@@ -157,7 +157,7 @@ Right click on the peer peer0.org1.example.com and choose “Install Smart Contr
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-15.png" width="70%" height="70%">
+  <img src="docs/doc-images/Lab1-15.png" width="60%" height="60%">
 </p>
 <br>
 
@@ -176,7 +176,7 @@ Next we have to instantiate the contract. Right click on the “mychannel” in 
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-17.png" width="70%" height="70%">
+  <img src="docs/doc-images/Lab1-17.png" width="60%" height="60%">
 </p>
 <br>
 
@@ -211,7 +211,7 @@ Click on Test the smart contract.
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-20.png" width="70%" height="70%">
+  <img src="docs/doc-images/Lab1-20.png" width="60%" height="60%">
 </p>
 <br>
 
@@ -221,7 +221,7 @@ In the left side menu you will see the instantiated contract first-contract@0.0.
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-21.png" width="70%" height="70%">
+  <img src="docs/doc-images/Lab1-21.png" width="60%" height="60%">
 </p>
 <br>
 
@@ -260,7 +260,7 @@ Now we will execute another transaction. From the “Blockchain Connections” v
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-24.png" width="70%" height="70%">
+  <img src="docs/doc-images/Lab1-24.png" width="60%" height="60%">
 </p>
 <br>
 
@@ -289,7 +289,7 @@ Hello,first-contract . Note that there should be no quotes or spaces around the 
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-26.png" width="50%" height="50%">
+  <img src="docs/doc-images/Lab1-26.png" width="60%" height="60%">
 </p>
 <br>
 
