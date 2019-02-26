@@ -64,7 +64,7 @@ cd Blockchain101-Feb2019
 Or download the folder:
 
 <p align="center">
-  <img src="docs/doc-images/Lab2-0.png">
+  <img src="docs/doc-images/Lab2-0.png" width="50%" height="50%">
 </p>
 
 ## 2. Package the smart contract
