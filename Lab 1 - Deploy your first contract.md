@@ -1,6 +1,6 @@
 # Lab 1 - Deploy your first contract using VSCode 👩🏻‍💻 👨🏻‍💻
 
- - [STEP 1](#step-1): Create a Smart Contract
+ - [STEP 1](#step-1-Create a Smart Contract)
  - [STEP 2](#step-2): Set up the IBM Blockchain Platform environment
  - [STEP 3](#step-3):  Test the smart contract
  - [NEXT STEPS](#next-steps)
@@ -14,8 +14,7 @@ This lab will take you through using the smart contract development environment 
  - VSCode https://code.visualstudio.com/
  - IBM Blockchain Platform plugin https://marketplace.visualstudio.com/items?itemName=IBMBlockchain.ibm-blockchain-platform
 
-## Step 1
-### Create a Smart Contract
+## Step 1 Create a Smart Contract
 
 Launch VSCode on your computer.
 When VSCode opens, click on the IBM Blockchain Platform (IBP) icon in the Activity Bar in VSCode as shown below.
