@@ -96,7 +96,7 @@ A more detailed overview of the code is as follows:
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-9b.png" width="80%" height="80%">>
+  <img src="docs/doc-images/Lab1-9b.png" width="70%" height="70%">>
 </p>
 <br>
 
