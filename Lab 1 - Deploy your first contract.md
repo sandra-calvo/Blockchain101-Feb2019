@@ -12,7 +12,7 @@ This lab will take you through using the smart contract development environment 
 ## Pre-requisites
  - [Docker](https://www.docker.com/get-started)
  - [VSCode](https://code.visualstudio.com/)
- - [IBM Blockchain Platform plugin](https://marketplace.visualstudio.com/items?itemName=IBMBlockchain.ibm-blockchain-platform)
+ - [IBM Blockchain Platform Extension for VSCode](https://marketplace.visualstudio.com/items?itemName=IBMBlockchain.ibm-blockchain-platform)
 
 ## Step 1 
 ### Create a Smart Contract
