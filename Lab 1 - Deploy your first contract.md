@@ -289,7 +289,7 @@ Hello,first-contract . Note that there should be no quotes or spaces around the 
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-26.png" width="70%" height="70%">
+  <img src="docs/doc-images/Lab1-26.png" width="50%" height="50%">
 </p>
 <br>
 
