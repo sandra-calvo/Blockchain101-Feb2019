@@ -12,4 +12,14 @@ Have fun! 😊
     - STEP 2: Set up the IBM Blockchain Platform environment
     - STEP 3: Test the smart contract
 
-* [Lab 2 - Build and deploy your first Blockchain app](https://github.com/sandra-calvo/Blockchain101-Feb2019/blob/master/Lab 2 - Build and deploy your first Blockchain app.md)
+* [Lab 2 - Build and deploy your first Blockchain app](https://github.com/sandra-calvo/Blockchain101-Feb2019/blob/master/Lab%202%20-%20Build%20and%20deploy%20your%20first%20Blockchain%20app.md)
+
+
+### Prerequisites
+- [IBM Cloud account]*(https://cloud.ibm.com/registration/?target=%2Fdashboard%2Fapps) 
+- [Node v8.x or greater and npm v5.x or greater](https://nodejs.org/en/download/)
+- [VSCode version 1.26 or greater](https://code.visualstudio.com)
+- [IBM Blockchain Platform Extension for VSCode](https://marketplace.visualstudio.com/items?itemName=IBMBlockchain.ibm-blockchain-platform)
+- [Docker](https://www.docker.com/get-started)
+
+*IBM Cloud PAY-AS-YOU-GO account needed to deploy the IBM Blockchain Platform in a Kubernetes cluster. 
