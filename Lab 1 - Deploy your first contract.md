@@ -209,17 +209,21 @@ At this point the contract is now ready to be called. The instantiate transactio
 
 Click on Test the smart contract. 
 
-IMAGE
+<br>
+<p align="center">
+  <img src="docs/doc-images/Lab1-20.png">
+</p>
+<br>
 
-Then select the local_fabric and choose the smart contract to test, in this case the first-contract@0.0.1. Select Javasctipt as the programming language.
-
-This will generate a test file. 
-
-IMAGE
+Then select the **local_fabric** and choose the smart contract to test, in this case the **first-contract@0.0.1**. Select **Javasctipt** as the programming language.
 
 In the left side menu you will see the instantiated contract first-contract@0.0.1, and you will see the three transactions that were defined in the contract are now available.
 
-IMAGE
+<br>
+<p align="center">
+  <img src="docs/doc-images/Lab1-21.png">
+</p>
+<br>
 
 Because the contract is running inside a docker container, we need to look at the docker logs to see the output. To see the docker logs we need to get the name of the docker container that is running the contract. 
 
@@ -229,27 +233,38 @@ However as the names of the containers used by Fabric and the IBP plugin are det
 
 Switch to the terminal window at the bottom of the VSCode screen
 
-IMAGE
+<br>
+<p align="center">
+  <img src="docs/doc-images/Lab1-22.png">
+</p>
+<br>
 
 Note that if your window size is small, you might not be able to see the Terminal window and you must first click on the ellipsis (…) to allow you to view it.
 
 
 At the prompt enter this command (you can copy and paste it if you wish): 
+
 ```
 docker logs fabricvscodelocalfabric-peer0.org1.example.com-first-contract-0.0.1
 ```
 
 This will produce several lines of output, most of which you can ignore and at the bottom of which will be the word “instantiate”.
 
-IMAGE
+<br>
+<p align="center">
+  <img src="docs/doc-images/Lab1-23.png">
+</p>
+<br>
 
 Now we will execute another transaction. From the “Blockchain Connections” view, expand out the instantiated contract as you did before until you can see the transactions, right click on “transaction1” and choose “submit transaction”:
 
-IMAGE
+<br>
+<p align="center">
+  <img src="docs/doc-images/Lab1-24.png">
+</p>
+<br>
 
 In the dialogue at the top of the screen enter the text “Hello World” or some similar text as shown below and press “Enter”. Note that you should not enter the quotes around the words as otherwise they will be taken as part of the string itself.
-
-IMAGE
 
 An information message will inform you when the transaction is complete.
 
@@ -260,15 +275,35 @@ docker logs fabricvscodelocalfabric-peer0.org1.example.com-first-contract-0.0.1
 ```
 You should now see the output contrains “transaction1” followed by the text you entered above.
 
-Finally let’s call the second transaction for completeness. Right click on transaction2 as you did above for the first transaction. This time the transaction takes two parameters, so we need to enter each one separated by a comma, such as
+<br>
+<p align="center">
+  <img src="docs/doc-images/Lab1-25.png">
+</p>
+<br>
+
+Finally let’s call the second transaction for completeness. Right click on transaction2 as you did above for the first transaction. 
+
+
+This time the transaction takes two parameters, so we need to enter each one separated by a comma, such as
 Hello,first-contract . Note that there should be no quotes or spaces around the parameters as shown below as otherwise they are taken as part of the parameters itself - they are not stripped off before the transaction is called. Press “Enter” when you are done.
 
-IMAGE
+<br>
+<p align="center">
+  <img src="docs/doc-images/Lab1-26.png">
+</p>
+<br>
 
 Again switch back to the terminal view as you did before and re-execute the docker logs command again to see the output from the second transaction call. You should see something like this below:
 
-IMAGE
+```
+docker logs fabricvscodelocalfabric-peer0.org1.example.com-first-contract-0.0.1
+```
 
+<br>
+<p align="center">
+  <img src="docs/doc-images/Lab1-27.png">
+</p>
+<br>
 
 
 ## Next Steps
