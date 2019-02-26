@@ -14,7 +14,11 @@ This lab will take you through using the smart contract development environment 
 Launch VSCode on your computer.
 When VSCode opens, click on the IBM Blockchain Platform (IBP) icon in the Activity Bar in VSCode as shown below.
 
-IMAGE
+<br>
+<p align="center">
+  <img src="docs/doc-images/Lab1-1.png">
+</p>
+<br>
 
 This will open the Homepage for IBM Blockchain Platform. As highlighted below, there will be a message in the bottom right telling you the extension has activated and other information telling you some of the capabilities of the plugin. These informational messages are used a lot in VSCode and will appear throughout this lab at various points.
 
