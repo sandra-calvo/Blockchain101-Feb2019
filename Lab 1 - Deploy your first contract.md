@@ -1,4 +1,4 @@
-# Lab 1 - Deploy your first contract using VSCode
+# Lab 1 - Deploy your first contract using VSCode 👩🏻‍💻 👨🏻‍💻
 
 This lab is a technical introduction to blockchain, specifically smart contract development using the latest developer enhancements in the Linux Foundation’s Hyperledger Fabric v1.4 and shows you how IBM’s Blockchain Platform’s developer experience can accelerate your pace of development.
 
@@ -9,7 +9,7 @@ This lab will take you through using the smart contract development environment 
  - VSCode https://code.visualstudio.com/
  - IBM Blockchain Platform plugin https://marketplace.visualstudio.com/items?itemName=IBMBlockchain.ibm-blockchain-platform
 
-# Part 1: Create a Smart Contract
+## Part 1: Create a Smart Contract
 
 Launch VSCode on your computer.
 When VSCode opens, click on the IBM Blockchain Platform (IBP) icon in the Activity Bar in VSCode as shown below.
@@ -125,7 +125,7 @@ You will first see an informational message about packaging the contract, then y
 
 This package is now ready to be installed onto a blockchain peer. 
 
-# Part 2: Set up the IBM Blockchain Platform environment
+## Part 2: Set up the IBM Blockchain Platform environment
 
 Next we will create the IBM Blockchcain Platform local development environment in VSCode. In the Blockchain Connections view click on LOCAL FABRIC OPS.
 
@@ -203,9 +203,25 @@ In the next dialogue that asks for parameters to the function, just press “Ent
 Instantiating a contract can take several minutes as a new docker container is built to contain the contract. 
 When it is complete you will see an information message.
 
-# Part 3: Test the smart contract
+## Part 3: Test the smart contract
 
-At this point the contract is now ready to be called. The instantiate transaction has already been run when the contract was instantiated by the framework. This transaction simply prints out the word “instantiate” to the console. Because the contract is running inside a docker container, we need to look at the docker logs to see the output. To see the docker logs we need to get the name of the docker container that is running the contract. 
+At this point the contract is now ready to be called. The instantiate transaction has already been run when the contract was instantiated by the framework. This transaction simply prints out the word “instantiate” to the console. 
+
+Click on Test the smart contract. 
+
+IMAGE
+
+Then select the local_fabric and choose the smart contract to test, in this case the first-contract@0.0.1. Select Javasctipt as the programming language.
+
+This will generate a test file. 
+
+IMAGE
+
+In the left side menu you will see the instantiated contract first-contract@0.0.1, and you will see the three transactions that were defined in the contract are now available.
+
+IMAGE
+
+Because the contract is running inside a docker container, we need to look at the docker logs to see the output. To see the docker logs we need to get the name of the docker container that is running the contract. 
 
 To do this we could list all the running containers with “docker ps” and look for the right one.
 
@@ -215,107 +231,48 @@ Switch to the terminal window at the bottom of the VSCode screen
 
 IMAGE
 
-Note that if your window size is small, you might not be able to see the Terminal
-window and you must first click on the ellipsis (…) to allow you to view it.
+Note that if your window size is small, you might not be able to see the Terminal window and you must first click on the ellipsis (…) to allow you to view it.
 
 
-
-At the prompt enter this command (you can copy and paste it if you wish):
+At the prompt enter this command (you can copy and paste it if you wish): 
+```
 docker logs fabricvscodelocalfabric-peer0.org1.example.com-first-contract-0.0.1
-This will produce several lines of output, most of which you can ignore and at the
-bottom of which will be the word “instantiate”.
+```
+
+This will produce several lines of output, most of which you can ignore and at the bottom of which will be the word “instantiate”.
 
 IMAGE
 
-Now we will execute another transaction. From the “Blockchain Connections”
-view, expand out the instantiated contract as you did before until you can see the
-transactions, right click on “transaction1” and choose “submit transaction”:
+Now we will execute another transaction. From the “Blockchain Connections” view, expand out the instantiated contract as you did before until you can see the transactions, right click on “transaction1” and choose “submit transaction”:
 
 IMAGE
 
-In the dialogue at the top of the screen enter the text “Hello World” or some
-similar text as shown below and press “Enter”. Note that you should not enter the
-quotes around the words as otherwise they will be taken as part of the string itself.
+In the dialogue at the top of the screen enter the text “Hello World” or some similar text as shown below and press “Enter”. Note that you should not enter the quotes around the words as otherwise they will be taken as part of the string itself.
 
 IMAGE
 
-An information message will inform you when the transaction is complete:
+An information message will inform you when the transaction is complete.
 
-IMAGE
+To take a look at the output, switch back to the terminal view and press the “up arrow” key to choose the docker logs command again. If you have trouble you can just Re-enter it:
 
-To take a look at the output, switch back to the terminal view and press the “up
-arrow” key to choose the docker logs command again. If you have trouble you can just
-re-enter it:
-
+```
 docker logs fabricvscodelocalfabric-peer0.org1.example.com-first-contract-0.0.1
+```
+You should now see the output contrains “transaction1” followed by the text you entered above.
 
-You should now see the output contrains “transaction1” followed by the text you
-entered above.
-
-Finally let’s call the second transaction for completeness. Right click on
-transaction2 as you did above for the first transaction. This time the transaction takes
-two parameters, so we need to enter each one separated by a comma, such as
-Hello,first-contract . Note that there should be no quotes or spaces around the
-parameters as shown below as otherwise they are taken as part of the parameters itself
-- they are not stripped off before the transaction is called. Press “Enter” when you are
-done.
+Finally let’s call the second transaction for completeness. Right click on transaction2 as you did above for the first transaction. This time the transaction takes two parameters, so we need to enter each one separated by a comma, such as
+Hello,first-contract . Note that there should be no quotes or spaces around the parameters as shown below as otherwise they are taken as part of the parameters itself - they are not stripped off before the transaction is called. Press “Enter” when you are done.
 
 IMAGE
 
-Again switch back to the terminal view as you did before and re-execute the
-docker logs command again to see the output from the second transaction call. You
-should see something like this below:
+Again switch back to the terminal view as you did before and re-execute the docker logs command again to see the output from the second transaction call. You should see something like this below:
 
 IMAGE
 
-We have now almost completed part one of this lab – an overview of the VSCode
-development experience. All that remains is to clear up the environment ready for part
-two.
 
-Select the “Disconnect from a Blockchain” icon from the “Blockchain
-Connections” view shown below:
-
-IMAGE
-
-Right-click on “local_fabric” and select the “Teardown Fabric Runtime”
-option from the context menu:
-
-IMAGE
-
-Be warned: if you accidently click on the local_fabric connection instead, it will
-reconnect to the peer and the teardown option will not be available until you
-disconnect again as described above.
-
-From the dialogue the appears in the bottom right, choose the “Yes” button:
-
-IMAGE
-
-Switch back to the explorer view and close all open editors, including the “IBM
-Blockchain Platform Home” by clicking on the “x” button on each tab
-
-IMAGE
-
-Right click on the “first-contract” folder and chose the “Remove Folder from
-Workspace” context menu option.
-
-IMAGE
-
-Note: if you cannot see the Explorer view, click on the Explorer icon again to make it
-re-appear.
-
-This will re-open the “IBM Blockchain Platform Home” page and leave your
-workspace ready for part two of the lab as shown below:
-
-IMAGE
-
-Now ask your instructor for instructions on where to find the lab guide for part
-two if they have not already provided them.
 
 ## Next Steps
-In this lab you have experienced an overview of using the IBM Blockchain Platform
-development experience. In part two, we will take this further and show how to use a
-sample contract that comes with Hyperledger Fabric with VSCode and actually start
-updating a blockchain for real.
+In this lab you have experienced an overview of using the IBM Blockchain Platform development experience. In part two, we will take this further and show how to use a sample contract that comes with Hyperledger Fabric with VSCode and actually start updating a blockchain for real.
 
 
 
