@@ -10,9 +10,9 @@ This lab is a technical introduction to blockchain, specifically smart contract 
 This lab will take you through using the smart contract development environment in Visual Studio Code (VSCode). Although smart contracts can be developed in any editor, IBM Blockchain Platform provides a plugin for VSCode that greatly simplifies the steps required. In addition, it also provides a “sandbox” development environment for easy development and test purposes using a real Hyperledger Fabric runtime.
 
 ## Pre-requisites
- - Docker https://www.docker.com/get-started 
- - VSCode https://code.visualstudio.com/
- - IBM Blockchain Platform plugin https://marketplace.visualstudio.com/items?itemName=IBMBlockchain.ibm-blockchain-platform
+ - [Docker](https://www.docker.com/get-started)
+ - [VSCode](https://code.visualstudio.com/)
+ - [IBM Blockchain Platform plugin](https://marketplace.visualstudio.com/items?itemName=IBMBlockchain.ibm-blockchain-platform)
 
 ## Step 1 
 ### Create a Smart Contract
