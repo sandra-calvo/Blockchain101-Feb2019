@@ -8,7 +8,6 @@ Have fun! 😊
 
 ### Agenda
 
-* [Lab 0 - Hyperledger Fabric Concepts](https://github.com/sandra-calvo/Blockchain101-Feb2019/blob/master/Lab%200%20-%20Basic%20concepts.md) 
 * [Lab 1 - Deploy your first contract](https://github.com/sandra-calvo/Blockchain101-Feb2019/blob/master/Lab%201%20-%20Deploy%20your%20first%20contract.md)
     - STEP 1: Create a Smart Contract
     - STEP 2: Set up the IBM Blockchain Platform environment
@@ -26,3 +25,7 @@ Have fun! 😊
 
 <sup>*IBM Cloud PAY-AS-YOU-GO account needed to deploy the IBM Blockchain Platform in a Kubernetes cluster.
 </sup>
+
+
+For more information on Hyperledger Fabric check:
+* [Hyperledger Fabric Docs](https://github.com/sandra-calvo/Blockchain101-Feb2019/blob/master/Lab%200%20-%20Basic%20concepts.md) 
