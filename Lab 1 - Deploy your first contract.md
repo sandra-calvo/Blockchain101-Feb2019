@@ -94,43 +94,23 @@ Take a look at the contents of this file. As you can see, the main body of the c
 
 A more detailed overview of the code is as follows:
 
-```javascript
-/*
- * SPDX-License-Identifier: Apache-2.0
- */
+<br>
+<p align="center">
+  <img src="docs/doc-images/Lab1-9b.png" width="40%" height="40%">>
+</p>
+<br>
 
-'use strict';
+- **Line 7** imports a Contract definition from the fabric-contract-api node module. This makes the Fabric API available to the smart contract to use.
 
-const { Contract } = require('fabric-contract-api');
+- **Line 9** starts the definition of a class called MyContract that extends the Contract we imported above. This provides our class with several capabilities such as defining our class to be a contract that can be called by the framework and giving us access to transaction handlers and a transaction based context called ctx. The context allows the framework to pass extra information into the transaction function when it is called. For example it can pass information about the identity of the caller of the contract as well as methods to query the world-state when the transaction is called.
 
-class MyContract extends Contract {
+- **Line 11** shows the definition of an instantiate method which can be used to initialise the contract when it is first deloyed or after an upgrade. By default this method takes a single context argument called ctx which is a context as described above. If required, it could take extra parameters as well.
 
-    async instantiate(ctx) {
-        console.info('instantiate');
-    }
+- **Line 15** defines a transaction function called “transaction1”. All transaction functions must take a context as their first parameter, usually called “ctx”. This is normally followed by one or more arguments that are passed to the transaction from the client.
 
-    async transaction1(ctx, arg1) {
-        console.info('transaction1', arg1);
-    }
+- **Line 19** defines a second transaction function called “transaction2” which this time takes two parameters after the context.
 
-    async transaction2(ctx, arg1, arg2) {
-        console.info('transaction2', arg1, arg2);
-    }
-
-}
-```
-- Line 7 imports a Contract definition from the fabric-contract-api node module. This makes the Fabric API available to the smart contract to use.
-
-- Line 9 starts the definition of a class called MyContract that extends the Contract we imported above. This provides our class with several capabilities such as defining our class to be a contract that can be called by the framework and giving us access to transaction handlers and a transaction based context called ctx. The context allows the framework to pass extra information into the transaction function when it is called. For example it can pass information about the identity of the caller of the contract as well as methods to query the world-state when the transaction is called.
-
-- Line 11 shows the definition of an instantiate method which can be used to initialise the contract when it is first deloyed or after an upgrade. By default this method takes a single context argument called ctx which is a context as described above. If required, it could take extra parameters as well.
-
-- Line 15 defines a transaction function called “transaction1”. All transaction functions must take a context as their first parameter, usually called “ctx”. This is normally followed by one or more arguments that are passed to the transaction from the client.
-
-- Line 19 defines a second transaction function called “transaction2” which this time takes two parameters after the context.
-
-
-Next we will package the smart contract. Click on the IBP icon in the sidebar to switch back to the IBM Blockchain Platform view. 
+Next we will package the smart contract. Click on the IBM Blockchain Platform icon in the sidebar to switch back to the IBM Blockchain Platform view. 
 
 <br>
 <p align="center">
