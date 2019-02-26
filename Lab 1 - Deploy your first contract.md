@@ -1,49 +1,22 @@
-# Deploy your first contract
+# Lab 1 - Deploy your first contract using VSCode
 
-This lab is a technical introduction to blockchain, specifically smart contract development
-using the latest developer enhancements in the Linux Foundation’s Hyperledger Fabric v1.4
-and shows you how IBM’s Blockchain Platform’s developer experience can accelerate your
-pace of development.
+This lab is a technical introduction to blockchain, specifically smart contract development using the latest developer enhancements in the Linux Foundation’s Hyperledger Fabric v1.4 and shows you how IBM’s Blockchain Platform’s developer experience can accelerate your pace of development.
 
-## Lab Scenario
-This lab is structured into 3 main parts. Each part will take you deeper into smart
-contract development.
+This lab will take you through using the smart contract development environment in Visual Studio Code (VSCode). Although smart contracts can be developed in any editor, IBM Blockchain Platform provides a plugin for VSCode that greatly simplifies the steps required. In addition, it also provides a “sandbox” development environment for easy development and test purposes using a real Hyperledger Fabric runtime.
 
-The first part of this lab will take you through using the smart contract development
-environment in Visual Studio Code (VSCode). Although smart contracts can be
-developed in any editor, IBM Blockchain Platform provides a plugin for VSCode that
-greatly simplifies the steps required. In addition, it also provides a “sandbox”
-development environment for easy development and test purposes using a real
-Hyperledger Fabric runtime.
+## Pre-requisites
+ - VSCode with IBM Blockchain Platform plugin
 
-The second part of this lab will take you through using a sample smart contract that
-comes with Hyperledger Fabric through the VSCode lens, where you will learn how to
-import contracts and interact with the development environment in more detail.
+# Part 1: An overview of the VSCode development experience
 
-In part three of this lab you will use VSCode to connect to another Hyperledger Fabric
-sample network, this time running outside of VSCode and learn how to interact with an
-external network in order to deploy, upgrade and extend smart contracts belonging to
-an existing network.
-
-# Part 1: An overview of the VSCode development
-experience
-
- Launch VSCode. 
- 
-When VSCode opens, click on the IBM Blockchain Platform (IBP) icon in the Activity Bar in VSCode as shown below.
+Launch VSCode on your computer.
+ When VSCode opens, click on the IBM Blockchain Platform (IBP) icon in the Activity Bar in VSCode as shown below.
 
 IMAGE
 
-This will open the Homepage for IBM Blockchain Platform. As highlighted below, there
-will be a message in the bottom right telling you the extension has activated and other
-information telling you some of the capabilities of the plugin. These informational
-messages are used a lot in VSCode and will appear throughout this lab at various
-points.
+This will open the Homepage for IBM Blockchain Platform. As highlighted below, there will be a message in the bottom right telling you the extension has activated and other information telling you some of the capabilities of the plugin. These informational messages are used a lot in VSCode and will appear throughout this lab at various points.
 
-If you close the Homepage by mistake and need to get back to it, you can open it again
-by pressing “ctrl + shift + p” to open the VSCode command palette and typing the word
-home in the dialogue box to find the “IBM Blockchain Platform: View Homepage”
-command.
+If you close the Homepage by mistake and need to get back to it, you can open it again by pressing “ctrl + shift + p” to open the VSCode command palette and typing the word home in the dialogue box to find the “IBM Blockchain Platform: View Homepage” command.
 
 IMAGE
 
@@ -59,40 +32,31 @@ After a little delay, at the top of the screen, you will be presented with a cho
 
 IMAGE
 
-In the dialogue that appears, first choose workspace in the left-hand bar, to change
-into the workspace folder, then click the create folder icon in the top right ( ), enter
-the name first-contract as the “folder name” and click Create.
+In the dialogue that appears, first choose workspace in the left-hand bar, to change into the workspace folder, then click the create folder icon in the top right ( ), enter the name first-contract as the “folder name” and click Create.
 
 IMAGE
 
-After making sure you are in the /blockchain/workspace/first-contract folder, click
-Open in the bottom right.
+After making sure you are in the /blockchain/workspace/first-contract folder, click Open in the bottom right.
 
 IMAGE
 
-Next, select the “Add to workspace” option that appears at the top of the
-VSCode window.
+Next, select the “Add to workspace” option that appears at the top of the VSCode window.
 
 IMAGE
 
-Wait for the information messages to appear whilst the project is generated as
-this can take up to a minute or more to complete.
+Wait for the information messages to appear whilst the project is generated as this can take up to a minute or more to complete.
 
 IMAGE
 
-You may notice that another copy of the IBP Homepage opens at this point.
-This can safely be closed by clicking on the “x” on the window.
+You may notice that another copy of the IBP Homepage opens at this point. This can safely be closed by clicking on the “x” on the window.
 
 IMAGE
 
-We can now switch to the Explorer view briefly to see the files generated by the
-plugin for the new smart contract. To do this you can either press “ctrl + shift + e” on
-your keyboard or choose the top left folder shaped icon in the activity bar ( ).
+We can now switch to the Explorer view briefly to see the files generated by the plugin for the new smart contract. To do this choose the top left folder shaped icon in the activity bar ( ).
 
 IMAGE
 
-Click to expand the lib folder and open the my-contract.js file by doubleclicking
-on it. This is the main file for the contract.
+Click to expand the lib folder and open the my-contract.js file by double clicking on it. This is the main file for the contract.
 
 IMAGE
 
@@ -100,59 +64,43 @@ When the my-contract.js file is open, you should see it in the main window to th
 
 IMAGE
 
-Take a look at the contents of this file. As you can see, the main body of the
-code is on lines 7 – 23. These define a very simple smart contract that does not make
-any updates to the ledger, it only echos a string when a transaction function is called.
+Take a look at the contents of this file. As you can see, the main body of the code is on lines 7 – 23. These define a very simple smart contract that does not make any updates to the ledger, it only echos a string when a transaction function is called.
 
 A more detailed overview of the code is as follows:
-Line 7 imports a Contract definition from the fabric-contract-api node module. This
-makes the Fabric API available to the smart contract to use.
-Line 9 starts the definition of a class called MyContract that extends the Contract we
-imported above. This provides our class with several capabilities such as defining our
-class to be a contract that can be called by the framework and giving us access to
-transaction handlers and a transaction based context called ctx. The context allows
-the framework to pass extra information into the transaction function when it is called.
-For example it can pass information about the identity of the caller of the contract as
-well as methods to query the world-state when the transaction is called.
 
-Line 11 shows the definition of an instantiate method which can be used to initialise
-the contract when it is first deloyed or after an upgrade. By default this method takes a
-single context argument called ctx which is a context as described above. If required, it
-could take extra parameters as well.
-Line 15 defines a transaction function called “transaction1”. All transaction functions
-must take a context as their first parameter, usually called “ctx”. This is normally
-followed by one or more arguments that are passed to the transaction from the client.
-Line 19 defines a second transaction function called “transaction2” which this time
-takes two parameters after the context.
-__
+- Line 7 imports a Contract definition from the fabric-contract-api node module. This makes the Fabric API available to the smart contract to use.
+
+- Line 9 starts the definition of a class called MyContract that extends the Contract we imported above. This provides our class with several capabilities such as defining our class to be a contract that can be called by the framework and giving us access to transaction handlers and a transaction based context called ctx. The context allows the framework to pass extra information into the transaction function when it is called.
+
+For example it can pass information about the identity of the caller of the contract as well as methods to query the world-state when the transaction is called.
+
+- Line 11 shows the definition of an instantiate method which can be used to initialise the contract when it is first deloyed or after an upgrade. By default this method takes a single context argument called ctx which is a context as described above. If required, it could take extra parameters as well.
+
+- Line 15 defines a transaction function called “transaction1”. All transaction functions must take a context as their first parameter, usually called “ctx”. This is normally followed by one or more arguments that are passed to the transaction from the client.
+
+- Line 19 defines a second transaction function called “transaction2” which this time takes two parameters after the context.
 
 IMAGE
 
-Next we will package the smart contract. Click on the IBP icon in the sidebar to
-switch back to the IBM Blockchain Platform view.
+Next we will package the smart contract. Click on the IBP icon in the sidebar to switch back to the IBM Blockchain Platform view.
 
 IMAGE
 
-From the Smart Contract Packages view click the “+” icon to package the
-smart contract into a deployment package. If you do not see the “+”, first click in the
-Smart Contract Packages view.
+From the Smart Contract Packages view click the “+” icon to package the smart contract into a deployment package. If you do not see the “+”, first click in the Smart Contract Packages view.
 
 IMAGE
 
-You will first see an informational message about packaging the contract, then you will
-see a package appear after it is created, called first-contract@0.0.1
+You will first see an informational message about packaging the contract, then you will see a package appear after it is created, called first-contract@0.0.1
 
 IMAGE
 
 This package is now ready to be installed onto a blockchain peer.
 
-Next we will create the IBP local_fabric development environment in VSCode.
-In the Blockchain Connections view click on local_fabric .
+Next we will create the IBP local_fabric development environment in VSCode. In the Blockchain Connections view click on local_fabric .
 
 IMAGE
 
-The circle icon next to local_fabric may appear to spin and text will appear in the
-output window to show progress. Note that this may take a little time to complete.
+The circle icon next to local_fabric may appear to spin and text will appear in the output window to show progress. Note that this may take a little time to complete.
 
 Once the text “[channelCmd] executeJoin -> INFO 002
 Successfully submitted proposal to join channel” appears in the Output
