@@ -1,8 +1,8 @@
 # Lab 1 - Deploy your first contract using VSCode 👩🏻‍💻 👨🏻‍💻
 
- - [STEP 1](#step-1-Create a Smart Contract)
+ - [STEP 1](#step-1): Create a Smart Contract
  - [STEP 2](#step-2): Set up the IBM Blockchain Platform environment
- - [STEP 3](#step-3):  Test the smart contract
+ - [STEP 3](#step-3): Test the smart contract
  - [NEXT STEPS](#next-steps)
 
 This lab is a technical introduction to blockchain, specifically smart contract development using the latest developer enhancements in the Linux Foundation’s Hyperledger Fabric v1.4 and shows you how IBM’s Blockchain Platform’s developer experience can accelerate your pace of development.
@@ -14,7 +14,8 @@ This lab will take you through using the smart contract development environment 
  - VSCode https://code.visualstudio.com/
  - IBM Blockchain Platform plugin https://marketplace.visualstudio.com/items?itemName=IBMBlockchain.ibm-blockchain-platform
 
-## Step 1 Create a Smart Contract
+## Step 1 
+### Create a Smart Contract
 
 Launch VSCode on your computer.
 When VSCode opens, click on the IBM Blockchain Platform (IBP) icon in the Activity Bar in VSCode as shown below.
@@ -93,6 +94,31 @@ Take a look at the contents of this file. As you can see, the main body of the c
 
 A more detailed overview of the code is as follows:
 
+```javascript
+/*
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+'use strict';
+
+const { Contract } = require('fabric-contract-api');
+
+class MyContract extends Contract {
+
+    async instantiate(ctx) {
+        console.info('instantiate');
+    }
+
+    async transaction1(ctx, arg1) {
+        console.info('transaction1', arg1);
+    }
+
+    async transaction2(ctx, arg1, arg2) {
+        console.info('transaction2', arg1, arg2);
+    }
+
+}
+```
 - Line 7 imports a Contract definition from the fabric-contract-api node module. This makes the Fabric API available to the smart contract to use.
 
 - Line 9 starts the definition of a class called MyContract that extends the Contract we imported above. This provides our class with several capabilities such as defining our class to be a contract that can be called by the framework and giving us access to transaction handlers and a transaction based context called ctx. The context allows the framework to pass extra information into the transaction function when it is called. For example it can pass information about the identity of the caller of the contract as well as methods to query the world-state when the transaction is called.
