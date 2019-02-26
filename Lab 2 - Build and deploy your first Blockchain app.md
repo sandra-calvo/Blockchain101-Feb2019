@@ -61,6 +61,11 @@ Clone this repository in a folder your choice:
 git clone https://github.com/sandra-calvo/Blockchain101-Feb2019.git
 cd Blockchain101-Feb2019
 ```
+Or download the folder:
+
+<p align="center">
+  <img src="docs/doc-images/Lab2-0">
+</p>
 
 ## 2. Package the smart contract
 
