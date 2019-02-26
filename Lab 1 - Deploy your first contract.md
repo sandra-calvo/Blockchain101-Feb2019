@@ -84,7 +84,7 @@ Click to expand the lib folder and open the my-contract.js file by double clicki
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-9.png" width="40%" height="40%">>
+  <img src="docs/doc-images/Lab1-9.png" width="80%" height="80%">>
 </p>
 <br>
 
