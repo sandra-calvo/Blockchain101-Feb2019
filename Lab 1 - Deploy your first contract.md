@@ -99,7 +99,9 @@ A more detailed overview of the code is as follows:
 - Line 19 defines a second transaction function called “transaction2” which this time takes two parameters after the context.
 
 
-Next we will package the smart contract. Click on the IBP icon in the sidebar to switch back to the IBM Blockchain Platform view. <img src="docs/doc-images/Lab1-10.png" width="5%" height="5%">
+Next we will package the smart contract. Click on the IBP icon in the sidebar to switch back to the IBM Blockchain Platform view. 
+
+<img src="docs/doc-images/Lab1-10.png" width="5%" height="5%">
 
 From the Smart Contract Packages view click the “+” icon to package the smart contract into a deployment package. If you do not see the “+”, first click in the Smart Contract Packages view.
 
