@@ -86,11 +86,11 @@ The smart contract in this application is similar to the one in Lab 1. The code 
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab2-1.png width="60%" height="60%">
+  <img src="docs/doc-images/Lab2-1.png" width="60%" height="60%">
 </p>
 <br>
 
-Expand initLedger and study its contents so we can understand what it will do. 
+Expand **initLedger** and study its contents so we can understand what it will do. 
 
 **Lines 11-82** define the **initLedger** transaction. This is designed to populate the blockchain with 10 sample car definitions to work with. We can see that each car is defined by four properties; color, make, model and owner. 
 After defining an array of 10 cars, it loops through them inserting their definitions into the world state in turn, by calling the **ctx.stub.putState(…)** method giving each car an incrementing index like **CAR1, CAR2** etc as it does so. 
@@ -148,10 +148,9 @@ The following illustration shows the components of your blockchain network and h
 
 ## 4. Build a network
 
-We will build a network as provided by the IBM Blockchain Platform [documentation](https://console.bluemix.net/docs/services/blockchain/howto/ibp-console-build-network.html#ibp-console-build-network).  This will include creating a channel with a single peer organization with its own MSP and CA (Certificate Authority), and an orderer organization with its own MSP and CA. We will create the respective identities to deploy peers and operate nodes.
+We will build a network as provided by the IBM Blockchain Platform [documentation](https://console.bluemix.net/docs/services/blockchain/howto/ibp-console-build-network.html#ibp-console-build-network).  This will include creating a channel with a single peer organization with its own MSP (Membership Services Provider) and CA (Certificate Authority), and an orderer organization with its own MSP and CA. We will create the respective identities to deploy peers and operate nodes.
 
 Here you can see a sample basic network structure.
-
 <br>
 <p align="center">
   <img src="docs/doc-images/Lab2-3.png">
@@ -161,7 +160,7 @@ Here you can see a sample basic network structure.
 The network contains the following components:
 
 - **Two peer organizations: Org1 and Org2**
-The tutorial series describe how to create two peer organizations and two associated peers. Think of organizations on a blockchain network to be like two different banks that need to transact with each other. We create the Org1 and Org2 Membership Services Provider (MSP) definition which defines the organizations Org1 and Org2.
+Think of organizations on a blockchain network to be like two different banks that need to transact with each other. We create the Org1 and Org2 Membership Services Provider (MSP) definition which defines the organizations Org1 and Org2.
 
 - **One orderer organization: Orderer Org**
 Because we are building a distributed ledger, the peers and orderers should be part of separate organization. Therefore, a separate organization is created for the orderer. Among other things, an orderer node orders the blocks of transactions that are sent to the peers to be written to their ledgers and become the blockchain. We create the Orderer Membership Services Provider (MSP) definition which defines the organization Orderer Org.
@@ -419,7 +418,6 @@ Channels provide data privacy. They allow sets of organizations to transact with
 }
 ```
 
-
 ## 7. Run the application
 
 * #### Enroll admin
@@ -449,8 +447,6 @@ Channels provide data privacy. They allow sets of organizations to transact with
     ```bash
     Successfully registered and enrolled admin user user1 and imported it into the wallet
     ```
-
-
 
 * #### Start the application server
   - From the `server` directory, start the server.
