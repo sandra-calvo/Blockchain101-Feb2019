@@ -9,7 +9,7 @@ This lab will take you through using the smart contract development environment 
  - VSCode https://code.visualstudio.com/
  - IBM Blockchain Platform plugin https://marketplace.visualstudio.com/items?itemName=IBMBlockchain.ibm-blockchain-platform
 
-# Part 1: An overview of the VSCode development experience
+# Part 1: Create a Smart Contract
 
 Launch VSCode on your computer.
 When VSCode opens, click on the IBM Blockchain Platform (IBP) icon in the Activity Bar in VSCode as shown below.
@@ -125,7 +125,9 @@ You will first see an informational message about packaging the contract, then y
 
 This package is now ready to be installed onto a blockchain peer. 
 
-Next we will create the IBM Blockchcain Platform local_fabric development environment in VSCode. In the Blockchain Connections view click on LOCAL FABRIC OPS.
+# Part 2: Set up the IBM Blockchain Platform environment
+
+Next we will create the IBM Blockchcain Platform local development environment in VSCode. In the Blockchain Connections view click on LOCAL FABRIC OPS.
 
 <br>
 <p align="center">
@@ -159,7 +161,6 @@ Right click on the peer peer0.org1.example.com and choose “Install Smart Contr
 </p>
 <br>
 
-
 From the “Choose which package to install on the peer” pop up at the top of the screen, choose “first-contract@0.0.1 Packaged” from the options.
 
 <br>
@@ -167,7 +168,6 @@ From the “Choose which package to install on the peer” pop up at the top of 
   <img src="docs/doc-images/Lab1-16.png">
 </p>
 <br>
-
 
 When the package is installed, an information message will be shown confirming the install.
 Confirm that under "Installed" you can see your first-contract installed. 
@@ -203,7 +203,7 @@ In the next dialogue that asks for parameters to the function, just press “Ent
 Instantiating a contract can take several minutes as a new docker container is built to contain the contract. 
 When it is complete you will see an information message.
 
-## TEST THE SMART CONTRACT
+# Part 3: Test the smart contract
 
 At this point the contract is now ready to be called. The instantiate transaction has already been run when the contract was instantiated by the framework. This transaction simply prints out the word “instantiate” to the console. Because the contract is running inside a docker container, we need to look at the docker logs to see the output. To see the docker logs we need to get the name of the docker container that is running the contract. 
 
