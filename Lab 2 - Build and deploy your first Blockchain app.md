@@ -59,7 +59,6 @@ Clone this repository in a folder your choice:
 
 ```bash
 git clone https://github.com/sandra-calvo/Blockchain101-Feb2019.git
-cd Blockchain101-Feb2019
 ```
 Or download the folder:
 
