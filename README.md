@@ -6,7 +6,7 @@ During lab 2 you will build your first Blockchain application and connect it to 
 
 Have fun! 😊
 
-* [Lab 0 - Basic Concepts] (https://github.com/sandra-calvo/Blockchain101-Feb2019/blob/master/Lab%200%20-%20Basic%20concepts.md) 
+* [Lab 0 - Basic Concepts](https://github.com/sandra-calvo/Blockchain101-Feb2019/blob/master/Lab%200%20-%20Basic%20concepts.md) 
 * Lab 1 - Deploy your first contract
     - STEP 1: Create a Smart Contract
     - STEP 2: Set up the IBM Blockchain Platform environment
