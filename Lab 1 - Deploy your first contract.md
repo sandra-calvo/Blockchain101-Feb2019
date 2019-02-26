@@ -211,7 +211,7 @@ Click on Test the smart contract.
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-20.png">
+  <img src="docs/doc-images/Lab1-20.png" width="70%" height="70%">
 </p>
 <br>
 
