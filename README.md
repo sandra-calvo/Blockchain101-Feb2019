@@ -9,9 +9,9 @@ Have fun! 😊
 ### Agenda
 
 * [Lab 1 - Deploy your first contract](https://github.com/sandra-calvo/Blockchain101-Feb2019/blob/master/Lab%201%20-%20Deploy%20your%20first%20contract.md)
-    - STEP 1: Create a Smart Contract
-    - STEP 2: Set up the IBM Blockchain Platform environment
-    - STEP 3: Test the smart contract
+    - Create a Smart Contract
+    - Set up the IBM Blockchain Platform environment
+    - Test the smart contract
 
 * [Lab 2 - Build and deploy your first Blockchain app](https://github.com/sandra-calvo/Blockchain101-Feb2019/blob/master/Lab%202%20-%20Build%20and%20deploy%20your%20first%20Blockchain%20app.md)
     - Package the smart contract
