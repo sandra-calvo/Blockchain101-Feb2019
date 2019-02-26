@@ -44,8 +44,6 @@ After you complete this lab, you will understand how to:
 
 ### Steps
 
-> To run a local network, you can find steps [here](./docs/run-local.md)
-
 1. [Clone the repo](#1-clone-the-repo)
 2. [Package the smart contract](#2-package-the-smart-contract)
 3. [Create IBM Cloud services](#3-create-ibm-cloud-services)
@@ -88,13 +86,15 @@ The smart contract in this application is similar to the one in Lab 1. The code 
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab 2-1.png">
+  <img src="docs/doc-images/Lab2-1.png width="60%" height="60%">
 </p>
 <br>
 
 Expand initLedger and study its contents so we can understand what it will do. 
 
-**Lines 11-82** define the **initLedger** transaction. This is designed to populate the blockchain with 10 sample car definitions to work with. We can see that each car is defined by four properties; color, make, model and owner. After defining an array of 10 cars, it loops through them inserting their definitions into the world state in turn, by calling the ctx.stub.putState(…) method giving each car an incrementing index like **CAR1, CAR2** etc as it does so. The **putState** method is made available to the transaction through the context parameter, **ctx** by the framework. 
+**Lines 11-82** define the **initLedger** transaction. This is designed to populate the blockchain with 10 sample car definitions to work with. We can see that each car is defined by four properties; color, make, model and owner. 
+After defining an array of 10 cars, it loops through them inserting their definitions into the world state in turn, by calling the **ctx.stub.putState(…)** method giving each car an incrementing index like **CAR1, CAR2** etc as it does so. 
+The **putState** method is made available to the transaction through the context parameter, **ctx** by the framework. 
 
 You can go through the first lab and run locally the fabcar smart contract if you want.
 
@@ -142,7 +142,7 @@ The following illustration shows the components of your blockchain network and h
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab 2-2.png">
+  <img src="docs/doc-images/Lab2-2.png">
 </p>
 <br>
 
@@ -154,7 +154,7 @@ Here you can see a sample basic network structure.
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab 2-3.png">
+  <img src="docs/doc-images/Lab2-3.png">
 </p>
 <br>
 
