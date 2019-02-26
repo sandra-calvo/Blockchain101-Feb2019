@@ -14,7 +14,12 @@ Have fun! 😊
     - STEP 3: Test the smart contract
 
 * [Lab 2 - Build and deploy your first Blockchain app](https://github.com/sandra-calvo/Blockchain101-Feb2019/blob/master/Lab%202%20-%20Build%20and%20deploy%20your%20first%20Blockchain%20app.md)
-
+    - Package the smart contract
+    - Create IBM Cloud services
+    - Build a network
+    - Deploy FabCar Smart Contract on the network
+    - Connect application to the network
+    - Run the application
 
 #### Prerequisites
 - [IBM Cloud account]*(https://cloud.ibm.com/registration/?target=%2Fdashboard%2Fapps) 
