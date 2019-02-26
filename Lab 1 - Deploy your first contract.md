@@ -13,7 +13,8 @@ This lab will take you through using the smart contract development environment 
  - VSCode https://code.visualstudio.com/
  - IBM Blockchain Platform plugin https://marketplace.visualstudio.com/items?itemName=IBMBlockchain.ibm-blockchain-platform
 
-## Step 1: Create a Smart Contract
+## Step 1
+### Create a Smart Contract
 
 Launch VSCode on your computer.
 When VSCode opens, click on the IBM Blockchain Platform (IBP) icon in the Activity Bar in VSCode as shown below.
@@ -129,7 +130,8 @@ You will first see an informational message about packaging the contract, then y
 
 This package is now ready to be installed onto a blockchain peer. 
 
-## Step 2: Set up the IBM Blockchain Platform environment
+## Step 2
+### Set up the IBM Blockchain Platform environment
 
 Next we will create the IBM Blockchcain Platform local development environment in VSCode. In the Blockchain Connections view click on LOCAL FABRIC OPS.
 
@@ -207,7 +209,8 @@ In the next dialogue that asks for parameters to the function, just press “Ent
 Instantiating a contract can take several minutes as a new docker container is built to contain the contract. 
 When it is complete you will see an information message.
 
-## Step 3: Test the smart contract
+## Step 3
+### Test the smart contract
 
 At this point the contract is now ready to be called. The instantiate transaction has already been run when the contract was instantiated by the framework. This transaction simply prints out the word “instantiate” to the console. 
 
