@@ -228,6 +228,8 @@ Click on Test the smart contract.
 </p>
 <br>
 
+If you closed the IBM Blockchain Platform Home tab you can Press the `F1` key to see the different VS code options. Choose IBM Blockchain Platform: Generate Smart Contract Project Tests.
+
 Then select the **local_fabric** and choose the smart contract to test, in this case the **first-contract@0.0.1**. Select **Javasctipt** as the programming language.
 
 In the left side menu you will see the instantiated contract first-contract@0.0.1, and you will see the three transactions that were defined in the contract are now available.
