@@ -157,7 +157,7 @@ Right click on the peer peer0.org1.example.com and choose “Install Smart Contr
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-15.png">
+  <img src="docs/doc-images/Lab1-15.png" width="70%" height="70%">
 </p>
 <br>
 
@@ -176,7 +176,7 @@ Next we have to instantiate the contract. Right click on the “mychannel” in 
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-17.png">
+  <img src="docs/doc-images/Lab1-17.png" width="70%" height="70%">
 </p>
 <br>
 
