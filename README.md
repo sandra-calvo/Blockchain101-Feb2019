@@ -2,7 +2,7 @@
 ## Building Blockchain networks 101
 
 In this workshop you will get familiar with Blockchain concepts and start by creating your own smart contract. 
-During lab 2 you will build your first Blockchain application and connect it to IBM Blockchain Platform running in IBM Kubernetes Service. 
+During lab 2 you will build your first Blockchain application using IBM Blockchain Platform deployed to a Kubernetes cluster in IBM Cloud. 
 
 Have fun! 😊
 
