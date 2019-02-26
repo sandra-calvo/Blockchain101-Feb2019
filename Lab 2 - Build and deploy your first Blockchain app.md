@@ -60,22 +60,15 @@ After you complete this lab, you will understand how to:
 Clone this repository in a folder your choice:
 
 ```bash
-git clone https://github.com/sandra-calvo/myfirst-blockchain-app.git
-cd myfirst-blockchain-app
+git clone https://github.com/sandra-calvo/Blockchain101-Feb2019.git
+cd Blockchain101-Feb2019
 ```
 
 ## 2. Package the smart contract
 
-We will use the IBM Blockchain Platform extension to package the Fabcar smart contract.
-- Sandra - 
+We will use the IBM Blockchain Platform extension to package the sample fabric smart contract. 
 
-First we need to install the Blockchain plugin in VS Code. 
-Open Visual Studio Code and go to the extensions tab on the left side. Search for Blockchain, select IBM Blockchain Platform and click on install. 
-
-<p align="center">
-  <img src="docs/doc-gifs/bc-plugin.gif">
-</p>
-
+Launch VSCode on your computer. When VSCode opens, click on the IBM Blockchain Platform (IBP) icon in the Activity Bar in VSCode as shown below.
 
 * In Visual Studio, open the `contract` folder from this repository that was cloned earlier.
 
@@ -91,11 +84,27 @@ Open Visual Studio Code and go to the extensions tab on the left side. Search fo
   <img src="docs/doc-gifs/package-smart-contract.gif">
 </p>
 
+The smart contract in this application is similar to the one in Lab 1. The code starts with the same import of a Contract definition from the fabric-contract-api node module on **line 7**. Next there are five transactions that make up the fabcar sample contract and this time most of the transactions take parameters and will either query or update a blockchain for real.
+
+<br>
+<p align="center">
+  <img src="docs/doc-images/Lab2-1.png">
+</p>
+<br>
+
+Expand initLedger and study its contents so we can understand what it will do. 
+
+**Lines 11-82** define the **initLedger** transaction. This is designed to populate the blockchain with 10 sample car definitions to work with. We can see that each car is defined by four properties; color, make, model and owner. After defining an array of 10 cars, it loops through them inserting their definitions into the world state in turn, by calling the ctx.stub.putState(…) method giving each car an incrementing index like **CAR1, CAR2** etc as it does so. The **putState** method is made available to the transaction through the context parameter, **ctx** by the framework. 
+
+You can go through the first lab and run locally the fabcar smart contract if you want.
+
 Now, we will start creating our Hyperledger Fabric network on the IBM Cloud.
 
 ## 3. Create IBM Cloud services
 
-* Create the [IBM Cloud Kubernetes Service](https://cloud.ibm.com/catalog/infrastructure/containers-kubernetes).  You can find the service in the `Catalog`.  For this code pattern, we can use the `Free` cluster, and give it a name.  Note, that the IBM Cloud allows one instance of a free cluster and expires after 30 days.
+* Create the [IBM Cloud Kubernetes Service](https://cloud.ibm.com/catalog/infrastructure/containers-kubernetes).  You can find the service in the `Catalog`.  For this code pattern, we can use the `Free` cluster, and give it a name.  Note, that the IBM Cloud allows one instance of a free cluster and expires after 30 days. 
+
+Deploy your kubernetes service in Dallas to match the IBM Blockchain Platform. 
 
 <br>
 <p align="center">
@@ -105,13 +114,15 @@ Now, we will start creating our Hyperledger Fabric network on the IBM Cloud.
 
 * Create the [IBM Blockchain Platform 2.0](https://console.bluemix.net/catalog/services/blockchain/) service on the IBM Cloud.  You can find the service in the `Catalog`, and give a name.
 
+IBM® Blockchain Platform provides a managed and full stack blockchain-as-a-service (BaaS) offering that allows you to deploy blockchain components in environments of your choice. The environment can be IBM Cloud, on-premises through IBM Cloud Private, and third-party clouds, such as Amazon Web Services (AWS). 
+
 <br>
 <p align="center">
   <img src="docs/doc-gifs/create-ibm-blockchain-2-service.gif">
 </p>
 <br>
 
-* After your kubernetes cluster is up and running, you can deploy your IBM Blockchain Platform on the cluster.  The service walks through few steps and finds your cluster on the IBM Cloud to deploy the service on.
+* After your kubernetes cluster is up and running, you can deploy your IBM Blockchain Platform on the cluster. The service walks through few steps and finds your cluster on the IBM Cloud to deploy the service on.
 
 <br>
 <p align="center">
@@ -127,9 +138,46 @@ Now, we will start creating our Hyperledger Fabric network on the IBM Cloud.
 </p>
 <br>
 
+The following illustration shows the components of your blockchain network and how they interact. 
+
+<br>
+<p align="center">
+  <img src="docs/doc-images/Lab2-2.png">
+</p>
+<br>
+
 ## 4. Build a network
 
 We will build a network as provided by the IBM Blockchain Platform [documentation](https://console.bluemix.net/docs/services/blockchain/howto/ibp-console-build-network.html#ibp-console-build-network).  This will include creating a channel with a single peer organization with its own MSP and CA (Certificate Authority), and an orderer organization with its own MSP and CA. We will create the respective identities to deploy peers and operate nodes.
+
+Here you can see a sample basic network structure.
+
+<br>
+<p align="center">
+  <img src="docs/doc-images/Lab2-3.png">
+</p>
+<br>
+
+The network contains the following components:
+
+- **Two peer organizations: Org1 and Org2**
+The tutorial series describe how to create two peer organizations and two associated peers. Think of organizations on a blockchain network to be like two different banks that need to transact with each other. We create the Org1 and Org2 Membership Services Provider (MSP) definition which defines the organizations Org1 and Org2.
+
+- **One orderer organization: Orderer Org**
+Because we are building a distributed ledger, the peers and orderers should be part of separate organization. Therefore, a separate organization is created for the orderer. Among other things, an orderer node orders the blocks of transactions that are sent to the peers to be written to their ledgers and become the blockchain. We create the Orderer Membership Services Provider (MSP) definition which defines the organization Orderer Org.
+
+- **Three Certificate Authorities (CAs): Org1 CA, Org2 CA, Orderer CA**
+A CA is the node that issues certificates to all organization members. Because it’s a best practice to deploy one CA per organization, we will deploy three CAs in total: one for each peer organization and one for the orderer organization. We will also use the CA's to create all of the nodes, identities, and organization definition for each organization.
+   
+- **One orderer: Orderer**
+Currently, only a SOLO ordering service can be deployed by using the console. You can deploy more than one of these nodes, assuming you have space in your cluster, but each orderer will have its own "consortium", which is the list of peer organizations that can create and join channels. You cannot connect multiple orderers to the same channel. As the admin of this orderer, you will add the peer organization that you use to create the consortium, which allows your peer organization to create a channel. If you want to create a channel that has organizations deployed in different clusters, which is how most production networks will be structured, you also need to import a peer organization that has been deployed in another console into your console. This allows the peer organization to join the channel that is hosted by the ordering service.
+    
+- **Two peers: Peer Org1 and Peer Org2**
+The blockchain ledger, Ledger x in the illustration above, is maintained by distributed peers. These peers are deployed with Couch DB External link icon as the database.
+    
+- **One channel: channel1**
+Channels provide data privacy. They allow sets of organizations to transact without exposing their data to organizations that are not members of the channel. Each channel has its own blockchain ledger, shared between the peers joined to that channel. The tutorial creates create one channel joined by both organizations, and instantiate smart contract on the channel that the organizations can use to transact.
+
 
 ### Create your organization and your entry point to your blockchain
 
