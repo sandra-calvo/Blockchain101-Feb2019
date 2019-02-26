@@ -145,7 +145,7 @@ When the connection is made, you should see a channel called mychannel appear, w
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-14.png">
+  <img src="docs/doc-images/Lab1-14.png" width="70%" height="70%">
 </p>
 <br>
 
@@ -221,7 +221,7 @@ In the left side menu you will see the instantiated contract first-contract@0.0.
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-21.png">
+  <img src="docs/doc-images/Lab1-21.png" width="70%" height="70%">
 </p>
 <br>
 
@@ -260,7 +260,7 @@ Now we will execute another transaction. From the “Blockchain Connections” v
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-24.png">
+  <img src="docs/doc-images/Lab1-24.png" width="70%" height="70%">
 </p>
 <br>
 
@@ -289,7 +289,7 @@ Hello,first-contract . Note that there should be no quotes or spaces around the 
 
 <br>
 <p align="center">
-  <img src="docs/doc-images/Lab1-26.png">
+  <img src="docs/doc-images/Lab1-26.png" width="70%" height="70%">
 </p>
 <br>
 
