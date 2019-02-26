@@ -1,7 +1,7 @@
 # Lab 1 - Deploy your first contract using VSCode 👩🏻‍💻 👨🏻‍💻
 
  - [Create a Smart Contract](#create-a-smart-contract)
- - [Set up the IBM Blockchain Platform Environment](#set-up-the-ibm-platform-environment)
+ - [Set up the IBM Blockchain Platform environment](#set-up-the-ibm-platform-environment)
  - [Test the smart contract](#test-the-smart-contract)
  - [Next Steps](#next-steps)
 
