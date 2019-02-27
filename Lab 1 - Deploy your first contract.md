@@ -322,7 +322,7 @@ docker logs fabricvscodelocalfabric-peer0.org1.example.com-first-contract-0.0.1
 ## Next Steps
 In this lab you have experienced an overview of using the IBM Blockchain Platform development experience. In part two, we will take this further and show how to use a sample contract that comes with Hyperledger Fabric with VSCode and actually start updating a blockchain for real.
 
-
+For more tutorials using VSCode and IBM Blockchain check: https://github.com/horeaporutiu/VSCodeTutorialBlockchain
 
 
 
