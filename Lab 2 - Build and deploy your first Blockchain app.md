@@ -104,6 +104,9 @@ You can go through the first lab and run locally the fabcar smart contract if yo
 
 Now, we will start creating our Hyperledger Fabric network on the IBM Cloud.
 
+**Note: If you have problems creating the package with VSCode download it from here:**
+https://ibm.box.com/v/fabcarPackage 
+
 ## 3. Create IBM Cloud services
 
 * Create the [IBM Cloud Kubernetes Service](https://cloud.ibm.com/catalog/infrastructure/containers-kubernetes).  You can find the service in the `Catalog`.  For this code pattern, we can use the `Free` cluster, and give it a name.  Note, that the IBM Cloud allows one instance of a free cluster and expires after 30 days. 
